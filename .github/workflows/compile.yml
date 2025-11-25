@@ -35,7 +35,7 @@ jobs:
           files: notes/notes.pdf
           name: ${{ steps.name.outputs.name }}
           tag_name: ${{ steps.name.outputs.name }}
-          make_latext: true
+          make_latest: true
       # - name: Upload the example paper to the release
       #   uses: actions/upload-release-asset@v1
       #   env:
