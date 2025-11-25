@@ -21,6 +21,11 @@ jobs:
       - name: Set release name
         id: name
         run: echo "name=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_OUTPUT
+      - name: Upload pdf to actions for testing
+        uses: actions/upload-artifact@v5
+        with:
+            name: PDF
+            path: notes/notes.pdf
       # - name: Create a new release
       #   uses: actions/create-release@v1
       #   id: create_release
