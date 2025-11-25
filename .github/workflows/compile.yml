@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
-      - name: Enable nomencl
-        run: cat .latexmkrc >> $HOME/.latexmkrc
       - name: Compile example document
         uses: xu-cheng/latex-action@v4
         with:
